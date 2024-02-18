@@ -1,0 +1,47 @@
+{
+    "name": "univer-examples",
+    "private": true,
+    "description": "Univer vanilla ts demo project",
+    "author": "DreamNum <developer@univer.ai>",
+    "license": "Apache-2.0",
+    "scripts": {
+        "build": "node ./esbuild.config.mjs",
+        "dev": "node ./esbuild.config.mjs --watch",
+        "lint:types": "tsc --noEmit"
+    },
+    "dependencies": {
+        "@univerjs/core": "*",
+        "@univerjs/design": "*",
+        "@univerjs/docs": "*",
+        "@univerjs/docs-ui": "*",
+        "@univerjs/engine-formula": "*",
+        "@univerjs/engine-render": "*",
+        "@univerjs/icons": "^0.1.28",
+        "@univerjs/rpc": "*",
+        "@univerjs/sheets": "*",
+        "@univerjs/sheets-formula": "*",
+        "@univerjs/sheets-numfmt": "*",
+        "@univerjs/sheets-ui": "*",
+        "@univerjs/sheets-zen-editor": "*",
+        "@univerjs/ui": "*",
+        "@univerjs/uniscript": "*",
+        "@wendellhu/redi": "^0.13.0",
+        "clsx": "^2.1.0",
+        "monaco-editor": "0.45.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-mosaic-component": "^6.1.0",
+        "rxjs": "^7.8.1"
+    },
+    "devDependencies": {
+        "@types/react": "^18.2.53",
+        "@types/react-dom": "^18.2.18",
+        "esbuild": "^0.20.0",
+        "esbuild-plugin-clean": "^1.0.1",
+        "esbuild-plugin-copy": "^2.1.1",
+        "esbuild-style-plugin": "^1.6.3",
+        "less": "^4.2.0",
+        "minimist": "^1.2.8",
+        "typescript": "^5.3.3"
+    }
+}
