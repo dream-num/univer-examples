@@ -55,8 +55,8 @@ function Examples() {
                 <div className={styles.btnBg}>→</div>
                 {' '}
             </a>
-            <a className={styles.btn} href="./uniscript/">
-                <span> Uniscript</span>
+            <a className={styles.btn} href="./sheets-uniscript/">
+                <span>Sheets Uniscript</span>
                 <div className={styles.btnBg}>→</div>
                 {' '}
             </a>

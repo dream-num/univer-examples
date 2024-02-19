@@ -79,7 +79,7 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
         './src/slides/main.ts',
 
         // uniscript
-        './src/uniscript/main.ts',
+        './src/sheets-uniscript/main.ts',
     ],
     outdir: './local',
 
