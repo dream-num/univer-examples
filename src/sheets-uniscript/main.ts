@@ -18,7 +18,6 @@ import "@univerjs/ui/lib/index.css";
 import "@univerjs/sheets-ui/lib/index.css";
 import "@univerjs/sheets-formula/lib/index.css";
 import "@univerjs/sheets-numfmt/lib/index.css";
-import "@univerjs/uniscript/lib/index.css";
 
 import { LocaleType, LogLevel, Univer } from '@univerjs/core';
 import { defaultTheme } from '@univerjs/design';
@@ -30,10 +29,10 @@ import { UniverSheetsFormulaPlugin } from '@univerjs/sheets-formula';
 import { UniverSheetsNumfmtPlugin } from '@univerjs/sheets-numfmt';
 import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import { UniverUIPlugin } from '@univerjs/ui';
-import { UniverUniscriptPlugin } from '@univerjs/uniscript';
 
 import { UNISCRIT_WORKBOOK_DATA_DEMO } from '../data/sheets/uniscript-data';
 import { DebuggerPlugin } from '../plugins/debugger';
+import { UniverUniscriptPlugin } from "../plugins/uniscript/plugin";
 
 // univer
 const univer = new Univer({

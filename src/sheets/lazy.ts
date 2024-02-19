@@ -15,7 +15,7 @@
  */
 
 import type { Plugin, PluginCtor } from '@univerjs/core';
-import { UniverUniscriptPlugin } from '@univerjs/uniscript';
+import { UniverUniscriptPlugin } from '../plugins/uniscript/plugin';
 
 export default function getLazyPlugins(): Array<[PluginCtor<Plugin>] | [PluginCtor<Plugin>, unknown]> {
     return [

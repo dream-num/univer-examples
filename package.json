@@ -24,7 +24,7 @@
         "@univerjs/sheets-ui": "*",
         "@univerjs/sheets-zen-editor": "*",
         "@univerjs/ui": "*",
-        "@univerjs/uniscript": "*",
+        "@univerjs/facade": "*",
         "@wendellhu/redi": "^0.13.0",
         "clsx": "^2.1.0",
         "monaco-editor": "0.45.0",
