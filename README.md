@@ -14,7 +14,8 @@
 
 | Univer Doc Demo                       | Preview Link                   |
 |---------------------------------------|--------------------------------|
-| Docs                                  | TODO                           |
+| [Docs](./src/docs)                                  | TODO                           |
+| [Docs Multi](./src/docs-multi) | TODO                          |
 | [Docs Uniscript](./src/docs-uniscript) | TODO                          |
 | Docs Collaboration [Pro]              | TODO                           |
 | Docs Collaboration Playground [Pro]   | TODO                           |
@@ -22,7 +23,7 @@
 
 | Univer Slide Demo                     | Preview Link                   |
 |---------------------------------------|--------------------------------|
-| Slides                                | TODO                           |
+| [Slides](./src/slides)                                | TODO                           |
 | [Slides Uniscript](./src/slides-uniscript) | TODO                      |
 | Slides Collaboration [Pro]            | TODO                           |
 | Slides Collaboration Playground [Pro] | TODO                           |

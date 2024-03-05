@@ -1,65 +1,77 @@
 @height: 40px;
 
 .examples {
-    display: flex;
-    gap: 36px;
-    align-items: center;
-    justify-content: center;
+    margin: 5% 0;
 
-    height: 100%;
-}
+    h1 {
+        text-align: center;
+        margin-bottom: 4%;
+    }
 
-.btn {
-    position: relative;
+    &-section {
+        display: flex;
+        gap: 36px;
+        align-items: center;
+        justify-content: center;
 
-    overflow: hidden;
-    gap: 8px;
+        height: 100%;
+    }
 
-    height: @height;
-    padding-right: 8px;
-    padding-left: @height + 6px;
-
-    font-size: 20px;
-    line-height: @height;
-    text-decoration: none;
-
-    border-radius: @height;
-
-    -webkit-font-smoothing: antialiased;
-
-    > span {
+    .btn {
         position: relative;
-        z-index: 1;
-        color: #313131;
-    }
 
-    &:hover {
-        > span {
-            color: #fff;
-        }
+        overflow: hidden;
+        gap: 8px;
 
-        .btn-bg {
-            width: 100%;
-        }
-    }
+        height: @height;
+        min-width: 160px;
 
-    &-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
+        padding-right: 8px;
+        padding-left: @height + 6px;
 
-        box-sizing: border-box;
-        width: 40px;
-        height: 40px;
-        padding-left: 10px;
-
+        font-size: 20px;
         line-height: @height;
-        color: #fff;
-        text-align: left;
+        text-decoration: none;
 
-        background-color: #313131;
-        border-radius: 40px;
+        border-radius: @height;
 
-        transition: width 0.15s ease-in-out;
+        -webkit-font-smoothing: antialiased;
+
+        >span {
+            position: relative;
+            z-index: 1;
+            color: #313131;
+        }
+
+        &:hover {
+            >span {
+                color: #fff;
+            }
+
+            .btn-bg {
+                width: 100%;
+            }
+        }
+
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            box-sizing: border-box;
+            width: 40px;
+            height: 40px;
+            padding-left: 10px;
+
+            line-height: @height;
+            color: #fff;
+            text-align: left;
+
+            background-color: #313131;
+            border-radius: 40px;
+
+            transition: width 0.15s ease-in-out;
+        }
     }
+
 }

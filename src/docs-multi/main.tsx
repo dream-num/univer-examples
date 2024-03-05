@@ -21,8 +21,8 @@ import { Mosaic, MosaicWindow } from "react-mosaic-component";
 import React from "react";
 import { DEFAULT_WORKBOOK_DATA_DEMO } from "../data";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
+import { ALL_FEATURES_DOCUMENT_DATA } from "../data/docs/features";
 import { locales } from "./locales";
-import { ALL_FEATURES_WORKBOOK_DATA } from "../data/sheets/demo/features";
 
 const univers: Univer[] = [];
 
@@ -37,37 +37,30 @@ function factory(id: string) {
 
 
     univer.registerPlugin(UniverRenderEnginePlugin);
+    univer.registerPlugin(UniverFormulaEnginePlugin);
     univer.registerPlugin(UniverUIPlugin, {
       container: id,
       header: true,
       toolbar: true,
-      footer: true,
     });
     // docs plugin
     univer.registerPlugin(UniverDocsPlugin, {
       standalone: true,
     });
     univer.registerPlugin(UniverDocsUIPlugin);
-    // sheets plugin
-    univer.registerPlugin(UniverSheetsPlugin);
-    univer.registerPlugin(UniverSheetsUIPlugin);
-
-    // sheet feature plugins
-    univer.registerPlugin(UniverSheetsNumfmtPlugin);
-    univer.registerPlugin(UniverFormulaEnginePlugin);
-    univer.registerPlugin(UniverSheetsFormulaPlugin);
+    
 
     // create univer sheet instance
-    univer.createUniverSheet(Tools.deepClone(ALL_FEATURES_WORKBOOK_DATA));
+    univer.createUniverDoc(Tools.deepClone(ALL_FEATURES_DOCUMENT_DATA));
 
     univers.push(univer);
   };
 }
 
 const TITLE_MAP: Record<ViewId, string> = {
-  a: "Sheet 1",
-  b: "Sheet 2",
-  c: "Sheet 3",
+  a: "Doc 1",
+  b: "Doc 2",
+  c: "Doc 3",
 };
 
 export type ViewId = "a" | "b" | "c";

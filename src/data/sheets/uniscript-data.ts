@@ -47,11 +47,11 @@ export const UNISCRIT_WORKBOOK_DATA_DEMO: IWorkbookData = {
             cellData: {
                 0: {
                     0: {
-                        v: '名字',
+                        v: 'Name',
                         t: 1,
                     },
                     1: {
-                        v: '身份证号',
+                        v: 'ID',
                         s: 'urBVIA',
                         t: 1,
                     },

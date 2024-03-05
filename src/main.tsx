@@ -34,33 +34,81 @@ console.table({
 
 function Examples() {
     return (
-        <section className={styles.examples}>
-            <a className={styles.btn} href="./sheets/">
-                <span> Univer Sheets</span>
-                <div className={styles.btnBg}>→</div>
-                {' '}
-            </a>
-            <a className={styles.btn} href="./docs/">
-                <span> Univer Docs</span>
-                <div className={styles.btnBg}>→</div>
-                {' '}
-            </a>
-            <a className={styles.btn} href="./slides/">
-                <span> Univer Slides</span>
-                <div className={styles.btnBg}>→</div>
-                {' '}
-            </a>
-            <a className={styles.btn} href="./sheets-multi/">
-                <span> Univer Multi Instance</span>
-                <div className={styles.btnBg}>→</div>
-                {' '}
-            </a>
-            <a className={styles.btn} href="./sheets-uniscript/">
-                <span>Sheets Uniscript</span>
-                <div className={styles.btnBg}>→</div>
-                {' '}
-            </a>
-        </section>
+        <div>
+
+            <div className={styles.examples}>
+                <h1>Univer Sheets</h1>
+
+                <section className={styles.examplesSection}>
+                    <a className={styles.btn} href="./sheets/">
+                        <span>Sheets</span>
+                        <div className={styles.btnBg}>→</div>
+                        {' '}
+                    </a>
+                    <a className={styles.btn} href="./sheets-multi/">
+                        <span>Sheets Multi</span>
+                        <div className={styles.btnBg}>→</div>
+                        {' '}
+                    </a>
+                    <a className={styles.btn} href="./sheets-uniscript/">
+                        <span>Sheets Uniscript</span>
+                        <div className={styles.btnBg}>→</div>
+                        {' '}
+                    </a>
+                    
+                </section>
+                
+            </div>
+
+            <div className={styles.examples}>
+
+                <h1>Univer Docs</h1>
+
+                <section className={styles.examplesSection}>
+                    <a className={styles.btn} href="./docs/">
+                        <span>Docs</span>
+                        <div className={styles.btnBg}>→</div>
+                        {' '}
+                    </a>
+                    <a className={styles.btn} href="./docs-multi/">
+                        <span>Docs Multi</span>
+                        <div className={styles.btnBg}>→</div>
+                        {' '}
+                    </a>
+                    <a className={styles.btn} href="./docs-uniscript/">
+                        <span>Docs Uniscript</span>
+                        <div className={styles.btnBg}>→</div>
+                        {' '}
+                    </a>
+                </section>
+            </div>
+
+
+            <div className={styles.examples}>
+
+                <h1>Univer Slides [coming soon]</h1>
+
+                <section className={styles.examplesSection}>
+                    <a className={styles.btn} href="./">
+                            <span>Slides</span>
+                            <div className={styles.btnBg}>→</div>
+                            {' '}
+                    </a>
+                    <a className={styles.btn} href="./">
+                            <span>Slides Multi</span>
+                            <div className={styles.btnBg}>→</div>
+                            {' '}
+                    </a>
+                    <a className={styles.btn} href="./">
+                            <span>Slides Uniscript</span>
+                            <div className={styles.btnBg}>→</div>
+                            {' '}
+                    </a>
+                </section>
+            </div>
+        
+        </div >
+
     );
 }
 

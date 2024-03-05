@@ -19,9 +19,10 @@ import { enUS as UniverDesignEnUS } from '@univerjs/design';
 import { enUS as UniverDocsUIEnUS } from '@univerjs/docs-ui';
 import { enUS as UniverSheetsEnUS } from '@univerjs/sheets';
 import { enUS as UniverSheetsUIEnUS } from '@univerjs/sheets-ui';
+import { enUS as UniverUiEnUS } from '@univerjs/ui';
 import { enUS as UniverSheetsFormulaEnUS } from '@univerjs/sheets-formula';
 import { enUS as UniverNumfmtEnUS } from '@univerjs/sheets-numfmt';
-import { enUS as UniverUiEnUS } from '@univerjs/ui';
+import { enUS as UniverUiscriptEnUS } from '../plugins/uniscript';
 
 export const locales = {
     [LocaleType.EN_US]: {
@@ -32,5 +33,6 @@ export const locales = {
         ...UniverDesignEnUS,
         ...UniverSheetsFormulaEnUS,
         ...UniverNumfmtEnUS,
+        ...UniverUiscriptEnUS,
     },
 };

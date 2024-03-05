@@ -72,14 +72,20 @@ const ctx = await esbuild[args.watch ? 'context' : 'build']({
         // sheets-multi
         './src/sheets-multi/main.tsx',
 
+        // sheets uniscript
+        './src/sheets-uniscript/main.ts',
+
         // docs
         './src/docs/main.ts',
 
+        // docs-multi
+        './src/docs-multi/main.tsx',
+
+        // docs uniscript
+        './src/docs-uniscript/main.ts',
+
         // slides
         './src/slides/main.ts',
-
-        // uniscript
-        './src/sheets-uniscript/main.ts',
     ],
     outdir: './local',
 
