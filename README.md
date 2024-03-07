@@ -1,5 +1,6 @@
 # Univer Examples
 
+## Links
 
 | Univer Sheet Demo                     | Preview Link                   |
 |---------------------------------------|--------------------------------|
@@ -27,3 +28,7 @@
 | [Slides Uniscript](./src/slides-uniscript) | TODO                      |
 | Slides Collaboration [Pro]            | TODO                           |
 | Slides Collaboration Playground [Pro] | TODO                           |
+
+## Development & Deployment
+
+Please refer to [Contribution Guide](./CONTRIBUTING.md).
