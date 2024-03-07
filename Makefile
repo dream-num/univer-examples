@@ -5,7 +5,7 @@ PUSH_TAG_AS_LATEST ?= true
 REPOSITORY = univer-examples
 NS ?= univer
 CTR = docker
-BUILDER = univer-examples-builder
+BUILDER ?= univer-examples-builder
 PROXY ?= 
 
 OSARCH = linux/amd64,linux/arm64/v8

@@ -37,9 +37,26 @@ jobs:
               uses: docker/setup-qemu-action@v3
 
             - name: Set up Docker Buildx
+              id: buildx
               uses: docker/setup-buildx-action@v3
 
             - name: Build and Push Docker Image
               run: |
                   IMAGE_TAG=$(echo "${{ github.sha }}" | cut -c 1-7)
-                  make push_image NS=release PUSH_TAG=$IMAGE_TAG
+                  make push_image NS=univer PUSH_TAG=$IMAGE_TAG BUILDER=${{ steps.buildx.outputs.name }}
+    
+    deploy:
+        name: Deploy
+        needs: build-docker-image
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Set IMAGE_TAG environment variable
+              run: echo "IMAGE_TAG=$(echo ${{ github.sha }} | cut -c 1-7)" >> $GITHUB_ENV
+            
+            - uses: peter-evans/repository-dispatch@v2
+              with:
+                token: ${{ secrets.GH_TOKEN }}
+                repository: dream-num/helm-charts
+                event-type: dispatch
+                client-payload: '{"service":"univer-examples","tag":"${{ env.IMAGE_TAG }}"}'
