@@ -4,9 +4,9 @@
 
 | Univer Sheet Demo                     | Preview Link                   |
 |---------------------------------------|--------------------------------|
-| [Sheets](./src/sheets)                |                TODO            |
-| [Sheets Multi](./src/sheets-multi)    | TODO                           |
-| [Sheets Uniscript](./src/sheets-uniscript)| TODO                       |
+| [Sheets](/sheets)                |                TODO            |
+| [Sheets Multi](/sheets-multi)    | TODO                           |
+| [Sheets Uniscript](/sheets-uniscript)| TODO                       |
 | Sheets Collaboration [Pro]            | TODO                           |
 | Sheets Collaboration Playground [Pro] | TODO                           |
 | Sheets Print [Pro]                    | TODO                           |
@@ -15,17 +15,17 @@
 
 | Univer Doc Demo                       | Preview Link                   |
 |---------------------------------------|--------------------------------|
-| [Docs](./src/docs)                                  | TODO                           |
-| [Docs Multi](./src/docs-multi) | TODO                          |
-| [Docs Uniscript](./src/docs-uniscript) | TODO                          |
+| [Docs](/docs)                                  | TODO                           |
+| [Docs Multi](/docs-multi) | TODO                          |
+| [Docs Uniscript](/docs-uniscript) | TODO                          |
 | Docs Collaboration [Pro]              | TODO                           |
 | Docs Collaboration Playground [Pro]   | TODO                           |
 
 
 | Univer Slide Demo                     | Preview Link                   |
 |---------------------------------------|--------------------------------|
-| [Slides](./src/slides)                                | TODO                           |
-| [Slides Uniscript](./src/slides-uniscript) | TODO                      |
+| [Slides](/slides)                                | TODO                           |
+| [Slides Uniscript](/slides-uniscript) | TODO                      |
 | Slides Collaboration [Pro]            | TODO                           |
 | Slides Collaboration Playground [Pro] | TODO                           |
 
