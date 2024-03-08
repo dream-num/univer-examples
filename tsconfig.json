@@ -1,27 +1,27 @@
 {
-    "$schema": "https://json.schemastore.org/tsconfig",
     "compilerOptions": {
-        "target": "ESNext",
-        "jsx": "react",
-        "lib": ["ESNext", "DOM", "DOM.Iterable", "WebWorker"],
-        "useDefineForClassFields": true,
-
-        "experimentalDecorators": true,
-        "module": "ESNext",
-
-        "moduleResolution": "bundler",
-
-        "resolveJsonModule": true,
-        "allowImportingTsExtensions": true,
-
-        "strict": true,
-        "strictPropertyInitialization": false,
-        "noFallthroughCasesInSwitch": true,
-        "noEmit": true,
-        "isolatedModules": true,
-        "skipLibCheck": true,
-        "types": ["esbuild-style-plugin"],
-        "outDir": "local"
+      "target": "ES2020",
+      "useDefineForClassFields": true,
+      "lib": ["ES2020", "DOM", "DOM.Iterable"],
+      "module": "ESNext",
+      "skipLibCheck": true,
+  
+      /* Bundler mode */
+      "moduleResolution": "bundler",
+      "allowImportingTsExtensions": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "noEmit": true,
+      "jsx": "react-jsx",
+  
+      /* Linting */
+      "strict": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noFallthroughCasesInSwitch": true,
+      "experimentalDecorators": true
     },
-    "include": ["src"]
-}
+    "include": ["src", "slides", "main.tsx", "sheets-uniscript", "sheets-multi", "sheets", "docs-uniscript", "docs-multi", "docs", "data"],
+    "references": [{ "path": "./tsconfig.node.json" }]
+  }
+  
