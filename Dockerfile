@@ -1,6 +1,6 @@
 FROM nginx:latest
 
-COPY  ./local /usr/share/nginx/html/univer-examples
+COPY  ./dist /usr/share/nginx/html/univer-examples
 
 RUN sed -i 's/listen\s*80;/listen 3010;/g' /etc/nginx/conf.d/default.conf
 
