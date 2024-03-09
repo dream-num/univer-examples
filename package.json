@@ -1,8 +1,18 @@
 {
     "name": "univer-examples",
     "private": true,
-    "description": "Univer vanilla ts demo project",
+    "description": "Univer examples",
     "author": "DreamNum <developer@univer.ai>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/dream-num/univer-examples.git"
+    },
+    "keywords": [
+        "univer",
+        "sheet",
+        "doc",
+        "slide"
+    ],
     "license": "Apache-2.0",
     "scripts": {
         "dev": "vite",
@@ -47,7 +57,6 @@
         "eslint-plugin-react-hooks": "^4.6.0",
         "eslint-plugin-react-refresh": "^0.4.5",
         "typescript": "^5.4.2",
-        "util": "^0.12.5",
         "vite": "^5.1.5"
     }
 }
