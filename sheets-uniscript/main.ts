@@ -14,11 +14,6 @@
  * limitations under the License.
  */
 import "./style.css";
-import "@univerjs/design/lib/index.css";
-import "@univerjs/ui/lib/index.css";
-import "@univerjs/sheets-ui/lib/index.css";
-import "@univerjs/sheets-formula/lib/index.css";
-import "@univerjs/sheets-numfmt/lib/index.css";
 
 import { LocaleType, LogLevel, Univer } from '@univerjs/core';
 import { defaultTheme } from '@univerjs/design';
@@ -30,6 +25,7 @@ import { UniverSheetsFormulaPlugin } from '@univerjs/sheets-formula';
 import { UniverSheetsNumfmtPlugin } from '@univerjs/sheets-numfmt';
 import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import { UniverUIPlugin } from '@univerjs/ui';
+import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
 
 import { UNISCRIT_WORKBOOK_DATA_DEMO } from '../data/sheets/uniscript-data';
 import { DebuggerPlugin } from '../plugins/debugger';
@@ -73,6 +69,7 @@ const example = [
     { label: 'Set multiple values', value: "const activeSheet = univerAPI.getActiveWorkbook().getActiveSheet();\n\n// B3:C4 setting value\nconst range1 = activeSheet.getRange(2, 1, 2, 2);\nrange1.setValues([[1,1],[1,1]]);\n\n// D3:E4 setting value and background color\nconst range2 = activeSheet.getRange(2, 3, 2, 2);\nrange2.setValues({\n    2:{\n        3: {\n            v: 3,\n            s: {\n                bg: { rgb: 'yellow' }\n            }\n        },\n        4: {\n            v: 4,\n            s: {\n                bg: { rgb: 'green' }\n            }\n        },\n    },\n    3:{\n        3: {\n            v: 5,\n            s: {\n                bg: { rgb: 'orange' }\n            }\n        },\n        4: {\n            v: 6,\n            s: {\n                bg: { rgb: 'red' }\n            }\n        },\n    },\n});" },
 ];
 
+univer.registerPlugin(UniverSheetsZenEditorPlugin);
 univer.registerPlugin(UniverUniscriptPlugin, {
     getWorkerUrl(moduleID: string, label: string) {
         if (label === 'typescript' || label === 'javascript') {

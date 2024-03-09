@@ -21,7 +21,7 @@
       "noFallthroughCasesInSwitch": true,
       "experimentalDecorators": true
     },
-    "include": ["src", "slides", "main.tsx", "sheets-uniscript", "sheets-multi", "sheets", "docs-uniscript", "docs-multi", "docs", "data"],
+    "include": ["src", "slides", "main.tsx", "sheets-uniscript", "sheets-multi", "sheets", "docs-uniscript", "docs-multi", "docs", "data", "vite-env.d.ts"],
     "references": [{ "path": "./tsconfig.node.json" }]
   }
   

@@ -29,8 +29,6 @@ export function UniscriptMenuItemFactory(accessor: IAccessor): IMenuButtonItem {
         tooltip: 'script-panel.tooltip.menu-button',
         icon: 'CodeSingle',
         type: MenuItemType.BUTTON,
-        positions: [MenuPosition.TOOLBAR_START],
-        hidden$: getMenuHiddenObservable(accessor, UniverInstanceType.SHEET),
-        disabled$: getCurrentSheetDisabled$(accessor),
+        positions: [MenuPosition.TOOLBAR_START]
     };
 }

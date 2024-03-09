@@ -1,25 +1,14 @@
 import "react-mosaic-component/react-mosaic-component.css";
 import "./index.css";
-import "@univerjs/design/lib/index.css";
-import "@univerjs/sheets-formula/lib/index.css";
-import "@univerjs/sheets-numfmt/lib/index.css";
-import "@univerjs/sheets-ui/lib/index.css";
-import "@univerjs/ui/lib/index.css";
 
 import { LocaleType, LogLevel, Tools, Univer } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverFormulaEnginePlugin } from "@univerjs/engine-formula";
 import { UniverRenderEnginePlugin } from "@univerjs/engine-render";
-import { UniverSheetsPlugin } from "@univerjs/sheets";
-import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
-import { UniverSheetsNumfmtPlugin } from "@univerjs/sheets-numfmt";
-import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
 import ReactDOM from "react-dom";
 import { Mosaic, MosaicWindow } from "react-mosaic-component";
-import React from "react";
-import { DEFAULT_WORKBOOK_DATA_DEMO } from "../data";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
 import { ALL_FEATURES_DOCUMENT_DATA } from "../data/docs/features";
 import { locales } from "./locales";

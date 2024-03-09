@@ -1,10 +1,5 @@
 import "react-mosaic-component/react-mosaic-component.css";
 import "./index.css";
-import "@univerjs/design/lib/index.css";
-import "@univerjs/sheets-formula/lib/index.css";
-import "@univerjs/sheets-numfmt/lib/index.css";
-import "@univerjs/sheets-ui/lib/index.css";
-import "@univerjs/ui/lib/index.css";
 
 import { LocaleType, LogLevel, Tools, Univer } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
@@ -16,10 +11,9 @@ import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
 import { UniverSheetsNumfmtPlugin } from "@univerjs/sheets-numfmt";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
+import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
 import ReactDOM from "react-dom";
 import { Mosaic, MosaicWindow } from "react-mosaic-component";
-import React from "react";
-import { DEFAULT_WORKBOOK_DATA_DEMO } from "../data";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
 import { locales } from "./locales";
 import { ALL_FEATURES_WORKBOOK_DATA } from "../data/sheets/demo/features";
@@ -56,6 +50,7 @@ function factory(id: string) {
     univer.registerPlugin(UniverSheetsNumfmtPlugin);
     univer.registerPlugin(UniverFormulaEnginePlugin);
     univer.registerPlugin(UniverSheetsFormulaPlugin);
+    univer.registerPlugin(UniverSheetsZenEditorPlugin);
 
     // create univer sheet instance
     univer.createUniverSheet(Tools.deepClone(ALL_FEATURES_WORKBOOK_DATA));

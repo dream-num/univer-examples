@@ -1,10 +1,5 @@
 
 import "./style.css";
-import "@univerjs/design/lib/index.css";
-import "@univerjs/ui/lib/index.css";
-import "@univerjs/sheets-ui/lib/index.css";
-import "@univerjs/sheets-formula/lib/index.css";
-import "@univerjs/sheets-numfmt/lib/index.css";
 
 import { LocaleType, LogLevel, Univer } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
@@ -17,11 +12,13 @@ import { UniverSheetsFormulaPlugin } from "@univerjs/sheets-formula";
 import { UniverSheetsNumfmtPlugin } from "@univerjs/sheets-numfmt";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
+import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
+import { DebuggerPlugin } from '../plugins/debugger';
 import { ALL_FEATURES_WORKBOOK_DATA } from "../data/sheets/demo/features";
 import { locales } from "./locales";
-import { IUniverRPCMainThreadConfig, UniverRPCMainThreadPlugin } from "@univerjs/rpc";
+// import { IUniverRPCMainThreadConfig, UniverRPCMainThreadPlugin } from "@univerjs/rpc";
 
-const LOAD_LAZY_PLUGINS_TIMEOUT = 1_000;
+// const LOAD_LAZY_PLUGINS_TIMEOUT = 1_000;
 // univer
 const univer = new Univer({
   theme: defaultTheme,
@@ -47,6 +44,7 @@ univer.registerPlugin(UniverSheetsUIPlugin);
 
 // sheet feature plugins
 univer.registerPlugin(UniverSheetsNumfmtPlugin);
+univer.registerPlugin(DebuggerPlugin);
 univer.registerPlugin(UniverFormulaEnginePlugin);
 // univer.registerPlugin(UniverFormulaEnginePlugin, {
 //   notExecuteFormula: true,
@@ -55,7 +53,7 @@ univer.registerPlugin(UniverSheetsFormulaPlugin);
 // univer.registerPlugin(UniverRPCMainThreadPlugin, {
 //   workerURL: './worker.js',
 // } as IUniverRPCMainThreadConfig);
-
+univer.registerPlugin(UniverSheetsZenEditorPlugin);
 // create univer sheet instance
 univer.createUniverSheet(ALL_FEATURES_WORKBOOK_DATA);
 

@@ -1,10 +1,11 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { univerPlugin } from '@univerjs/vite-plugin'
 
 export default defineConfig({
     base: './',
-    plugins: [react()],
+    plugins: [react(),univerPlugin()],
     css: {
         modules: {
             localsConvention: 'camelCaseOnly',
@@ -14,6 +15,7 @@ export default defineConfig({
     build: {
         rollupOptions: {
           input: {
+            index: resolve(__dirname, 'index.html'),
             docs: resolve(__dirname, 'docs/index.html'),
             'docs-multi': resolve(__dirname, 'docs-multi/index.html'),
             'docs-uniscript': resolve(__dirname, 'docs-uniscript/index.html'),

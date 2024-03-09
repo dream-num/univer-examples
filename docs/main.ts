@@ -15,8 +15,6 @@
  */
 
 import "./style.css";
-import "@univerjs/design/lib/index.css";
-import "@univerjs/ui/lib/index.css";
 
 import { LocaleType, Univer } from '@univerjs/core';
 import { defaultTheme } from '@univerjs/design';
@@ -26,7 +24,6 @@ import { UniverRenderEnginePlugin } from '@univerjs/engine-render';
 import { UniverUIPlugin } from '@univerjs/ui';
 
 import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
-import { DEFAULT_DOCUMENT_DATA_CN } from '../data';
 import { DebuggerPlugin } from '../plugins/debugger';
 import { locales } from './locales';
 import { ALL_FEATURES_DOCUMENT_DATA } from "../data/docs/features";
