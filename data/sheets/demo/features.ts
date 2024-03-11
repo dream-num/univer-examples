@@ -3216,7 +3216,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "t": 2
           },
           "7": {
-            "v": "",
+            "f": "=SUBTOTAL(9,OFFSET($D$15,ROW($D$15:$D$18)-ROW($D$15),1,3))",
             "t": 1
           },
           "8": {
@@ -3261,7 +3261,9 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "v": 55,
             "t": 2
           },
-          "7": {},
+          "7": {
+            "f": '=SUBTOTAL(9,OFFSET(E15,ROW(E15:E18)-ROW(E15),1,3))',
+          },
           "8": {
             "v": "",
             "t": 1
@@ -3304,7 +3306,9 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "v": 54,
             "t": 2
           },
-          "7": {},
+          "7": {
+            "f": '=SUBTOTAL(9,OFFSET(F15,ROW(F15:F18)-ROW(F15),1,3))'
+          },
           "8": {
             "v": "",
             "t": 1
@@ -3347,7 +3351,9 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "v": 73,
             "t": 2
           },
-          "7": {},
+          "7": {
+            "f": '=SUBTOTAL(9,OFFSET(G15,ROW(G15:G18)-ROW(G15),1,3))'
+          },
           "8": {
             "v": "",
             "t": 1
@@ -3579,7 +3585,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "t": 1
           },
           "8": {
-            "v": "dumpling",
+            "f": '=INDEX(D21:D25,MATCH("dumpling",D21:D25),1)',
             "t": 1
           },
           "9": {
@@ -3625,7 +3631,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "t": 1
           },
           "8": {
-            "v": "FALSE",
+            "f": "=ISNA(MATCH(D21:D25,C21:C27,0))",
             "t": 3
           },
           "9": {
@@ -4217,7 +4223,9 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "v": "",
             "t": 1
           },
-          "6": {},
+          "6": {
+            "f":'=SUM(IF(MOD((C31:C39="Fax")+(D31:D39="Jones"),2),1,0))'
+          },
           "7": {
             "v": "",
             "t": 1
