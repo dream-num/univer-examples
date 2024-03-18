@@ -15,87 +15,89 @@
  */
 
 import { createRoot } from 'react-dom/client';
+import App from './main/App';
 
-import styles from './styles.module.less';
+// import styles from './styles.module.less';
 
 function Examples() {
-    return (
-        <div>
+    return <App />;
+    // return (
+    //     <div>
 
-            <div className={styles.examples}>
-                <h1>Univer Sheets</h1>
+    //         <div className={styles.examples}>
+    //             <h1>Univer Sheets</h1>
 
-                <section className={styles.examplesSection}>
-                    <a className={styles.btn} href="./sheets/">
-                        <span>Sheets</span>
-                        <div className={styles.btnBg}>→</div>
-                        {' '}
-                    </a>
-                    <a className={styles.btn} href="./sheets-multi/">
-                        <span>Sheets Multi</span>
-                        <div className={styles.btnBg}>→</div>
-                        {' '}
-                    </a>
-                    <a className={styles.btn} href="./sheets-uniscript/">
-                        <span>Sheets Uniscript</span>
-                        <div className={styles.btnBg}>→</div>
-                        {' '}
-                    </a>
+    //             <section className={styles.examplesSection}>
+    //                 <a className={styles.btn} href="./sheets/">
+    //                     <span>Sheets</span>
+    //                     <div className={styles.btnBg}>→</div>
+    //                     {' '}
+    //                 </a>
+    //                 <a className={styles.btn} href="./sheets-multi/">
+    //                     <span>Sheets Multi</span>
+    //                     <div className={styles.btnBg}>→</div>
+    //                     {' '}
+    //                 </a>
+    //                 <a className={styles.btn} href="./sheets-uniscript/">
+    //                     <span>Sheets Uniscript</span>
+    //                     <div className={styles.btnBg}>→</div>
+    //                     {' '}
+    //                 </a>
                     
-                </section>
+    //             </section>
                 
-            </div>
+    //         </div>
 
-            <div className={styles.examples}>
+    //         <div className={styles.examples}>
 
-                <h1>Univer Docs</h1>
+    //             <h1>Univer Docs</h1>
 
-                <section className={styles.examplesSection}>
-                    <a className={styles.btn} href="./docs/">
-                        <span>Docs</span>
-                        <div className={styles.btnBg}>→</div>
-                        {' '}
-                    </a>
-                    <a className={styles.btn} href="./docs-multi/">
-                        <span>Docs Multi</span>
-                        <div className={styles.btnBg}>→</div>
-                        {' '}
-                    </a>
-                    <a className={styles.btn} href="./docs-uniscript/">
-                        <span>Docs Uniscript</span>
-                        <div className={styles.btnBg}>→</div>
-                        {' '}
-                    </a>
-                </section>
-            </div>
+    //             <section className={styles.examplesSection}>
+    //                 <a className={styles.btn} href="./docs/">
+    //                     <span>Docs</span>
+    //                     <div className={styles.btnBg}>→</div>
+    //                     {' '}
+    //                 </a>
+    //                 <a className={styles.btn} href="./docs-multi/">
+    //                     <span>Docs Multi</span>
+    //                     <div className={styles.btnBg}>→</div>
+    //                     {' '}
+    //                 </a>
+    //                 <a className={styles.btn} href="./docs-uniscript/">
+    //                     <span>Docs Uniscript</span>
+    //                     <div className={styles.btnBg}>→</div>
+    //                     {' '}
+    //                 </a>
+    //             </section>
+    //         </div>
 
 
-            <div className={styles.examples}>
+    //         <div className={styles.examples}>
 
-                <h1>Univer Slides [coming soon]</h1>
+    //             <h1>Univer Slides [coming soon]</h1>
 
-                <section className={styles.examplesSection}>
-                    <a className={styles.btn} href="./">
-                            <span>Slides</span>
-                            <div className={styles.btnBg}>→</div>
-                            {' '}
-                    </a>
-                    <a className={styles.btn} href="./">
-                            <span>Slides Multi</span>
-                            <div className={styles.btnBg}>→</div>
-                            {' '}
-                    </a>
-                    <a className={styles.btn} href="./">
-                            <span>Slides Uniscript</span>
-                            <div className={styles.btnBg}>→</div>
-                            {' '}
-                    </a>
-                </section>
-            </div>
+    //             <section className={styles.examplesSection}>
+    //                 <a className={styles.btn} href="./">
+    //                         <span>Slides</span>
+    //                         <div className={styles.btnBg}>→</div>
+    //                         {' '}
+    //                 </a>
+    //                 <a className={styles.btn} href="./">
+    //                         <span>Slides Multi</span>
+    //                         <div className={styles.btnBg}>→</div>
+    //                         {' '}
+    //                 </a>
+    //                 <a className={styles.btn} href="./">
+    //                         <span>Slides Uniscript</span>
+    //                         <div className={styles.btnBg}>→</div>
+    //                         {' '}
+    //                 </a>
+    //             </section>
+    //         </div>
         
-        </div >
+    //     </div >
 
-    );
+    // );
 }
 
 createRoot(document.getElementById('app')!).render(<Examples />);

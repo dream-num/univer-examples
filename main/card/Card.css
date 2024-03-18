@@ -1,0 +1,57 @@
+/* Card.css */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card__image-placeholder {
+    background-color: #f0f0f0; /* Placeholder color, replace with actual image styles */
+    height: 200px; /* Adjust as per your design */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ccc;
+  }
+  
+  .card__title {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+  }
+  
+  .card__description {
+    font-size: 1rem;
+    color: #666;
+    margin: 1rem;
+  }
+  
+  .card__link {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: #007bff; /* Adjust color to match your design */
+    text-decoration: none;
+  }
+  
+  .card__link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      margin: 1rem 0.5rem;
+    }
+  
+    .card__image-placeholder {
+      height: 150px;
+    }
+  }
+  

@@ -1,0 +1,102 @@
+/* MainContent.css */
+.main-content {
+    text-align: center;
+    padding: 2rem;
+    max-width: 800px;
+    /* Adjust as needed for your design */
+    margin: 0 auto;
+}
+
+.main-content__title {
+    color: #0F172A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 56px;
+    /* 100% */
+}
+
+.main-content__description {
+    color: #0F172A;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    /* 155.556% */
+    margin: 26px 0 24px 0;
+}
+
+.main-content__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.main-content__button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #222;
+    color: #fff;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.main-content__button--started {
+    border-radius: 32px;
+    background: var(--button, linear-gradient(90deg, #5357ED 0%, #40B9FF 104.41%));
+}
+
+
+.main-content__button--github {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    background: #393E46;
+}
+
+.main-content__github-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.4rem;
+    /* Space between the icon and the text */
+    vertical-align: middle;
+    /* Align the icon vertically with the text */
+}
+
+.main-content__button:hover {
+    background-color: #444;
+    /* Hover effect for buttons */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-content {
+        padding: 1rem;
+    }
+
+    .main-content__title {
+        font-size: 1.5rem;
+    }
+
+    .main-content__description {
+        font-size: 0.9rem;
+    }
+
+    .main-content__buttons {
+        flex-direction: column;
+    }
+
+    .main-content__button {
+        width: 100%;
+        /* Full width buttons on mobile */
+        margin-bottom: 0.5rem;
+    }
+}
