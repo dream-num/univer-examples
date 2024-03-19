@@ -7,26 +7,18 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = () => {
-  // For demonstration, these functions could be passed in via props or context
-  const handleLanguageChange = () => {
-    // Logic to change the language
-  };
-
-  const handleJoinWaitlist = () => {
-    // Logic to join the waitlist
-  };
 
   return (
     <header className="header">
-      <div className="header__logo"><img src={`/read-me-light.svg`} alt="Logo" /></div>
+      <a href="https://univer.ai" rel="nofollow" target='_blank' title='univer' className="header__logo"><img src={`/read-me-light.svg`} alt="Logo" /></a>
 
       <div className="header__actions">
         {/* <button onClick={handleLanguageChange} className="header__language-toggle">
           Language
         </button> */}
-        <button onClick={handleJoinWaitlist} className="header__join-waitlist">
+        <a href="https://discord.gg/z3NKNT6D2f" rel="nofollow" target='_blank' title='univer'  className="header__join-waitlist">
           Join Waitlist
-        </button>
+        </a>
       </div>
     </header>
   );

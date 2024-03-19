@@ -7,32 +7,38 @@ const cardsData = [
     {
       title: 'Sheets',
       url: './sheets/',
-      description: 'Collaborate with ease using our intuitive Sheets interface.',
+      description: 'Create and edit spreadsheets with our Sheets feature.',
+      img: './assets/img/examples-sheets.gif'
     },
     {
       title: 'Sheets Multi',
       url: './sheets-multi/',
       description: 'Manage multiple sheets in one unified view with Sheets Multi.',
+      img: './assets/img/examples-sheets-multi.gif'
     },
     {
       title: 'Sheets Uniscript',
       url: './sheets-uniscript/',
-      description: 'Extend the functionality of your sheets with Uniscript.',
+      description: 'Powerful scripting capabilities with Sheets Uniscript.',
+      img: './assets/img/examples-sheets-uniscript.gif'
     },
     {
       title: 'Docs',
       url: './docs/',
-      description: 'Create and share documents seamlessly with our Docs feature.',
+      description: 'Create and edit documents with our Docs feature.',
+      img: './assets/img/examples-docs.gif'
     },
     {
       title: 'Docs Multi',
       url: './docs-multi/',
-      description: 'Work on several documents simultaneously with Docs Multi.',
+      description: 'Manage multiple docs in one unified view with Docs Multi.',
+      img: './assets/img/examples-docs-multi.gif'
     },
     {
       title: 'Docs Uniscript',
       url: './docs-uniscript/',
-      description: 'Unleash powerful scripting capabilities in your documents with Docs Uniscript.',
+      description: 'Powerful scripting capabilities with Docs Uniscript.',
+      img: './assets/img/examples-docs-uniscript.gif'
     },
   ];
   
@@ -41,7 +47,7 @@ const CardsContainer: React.FC = () => {
   return (
     <div className="cards-container">
       {cardsData.map((card, index) => (
-        <Card key={index} title={card.title} description={card.description} url={card.url} />
+        <Card key={index} title={card.title} description={card.description} url={card.url} img={card.img} />
       ))}
     </div>
   );

@@ -1,57 +1,87 @@
 /* Card.css */
 .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    overflow: hidden;
-    text-align: center;
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  border-bottom: 1px solid #E0E2E5;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card__image-placeholder {
+  background-color: #f0f0f0;
+  /* Placeholder color, replace with actual image styles */
+  height: 200px;
+  /* Adjust as per your design */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: #ccc;
+  border-radius: 16px;
+  padding: 16px;
+  background: #F0F3FF;
+}
+
+.card__image-placeholder__inner {
+  display: inline-block;
+  /* Adjust color to match your design */
+  text-decoration: none;
+  border-radius: 16px;
+  background-size: cover;
+  background-position-x: center;
+  width: 100%;
+  height: 100%;
+}
+
+.card__image-placeholder__inner:hover{
+  cursor: pointer;
+}
+
+.card__title {
+  margin: 24px 0 12px 0;
+
+  color: #0F172A;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+  /* 130% */
+}
+
+.card__description {
+
+  color: #0F172A;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+}
+
+.card__link {
+  display: inline-block;
+  /* Adjust color to match your design */
+  text-decoration: none;
+  margin: 12px 0 52px 0;
+  color: #0019FE;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+}
+
+.card__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 1rem 0.5rem;
   }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
+
   .card__image-placeholder {
-    background-color: #f0f0f0; /* Placeholder color, replace with actual image styles */
-    height: 200px; /* Adjust as per your design */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    color: #ccc;
+    height: 150px;
   }
-  
-  .card__title {
-    font-size: 1.25rem;
-    margin-top: 1rem;
-  }
-  
-  .card__description {
-    font-size: 1rem;
-    color: #666;
-    margin: 1rem;
-  }
-  
-  .card__link {
-    display: inline-block;
-    margin-bottom: 1rem;
-    color: #007bff; /* Adjust color to match your design */
-    text-decoration: none;
-  }
-  
-  .card__link:hover {
-    text-decoration: underline;
-  }
-  
-  @media (max-width: 768px) {
-    .card {
-      margin: 1rem 0.5rem;
-    }
-  
-    .card__image-placeholder {
-      height: 150px;
-    }
-  }
-  
+}
