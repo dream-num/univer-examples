@@ -14,19 +14,16 @@
  * limitations under the License.
  */
 
-import type { IMenuButtonItem } from '@univerjs/ui';
-import { MenuItemType, MenuPosition } from '@univerjs/ui';
-import type { IAccessor } from '@wendellhu/redi';
+import { LocaleType, Univer } from '@univerjs/core';
+import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
+import { UniverRPCWorkerThreadPlugin } from '@univerjs/rpc';
+import { UniverSheetsPlugin } from '@univerjs/sheets';
 
-import { ToggleScriptPanelOperation } from '../commands/operations/panel.operation';
+// Univer web worker is also a univer application.
+const univer = new Univer({
+    locale: LocaleType.ZH_CN,
+});
 
-export function UniscriptMenuItemFactory(accessor: IAccessor): IMenuButtonItem {
-    return {
-        id: ToggleScriptPanelOperation.id,
-        title: 'toggle-script-panel',
-        tooltip: 'script-panel.tooltip.menu-button',
-        icon: 'CodeSingle',
-        type: MenuItemType.BUTTON,
-        positions: [MenuPosition.TOOLBAR_START]
-    };
-}
+univer.registerPlugin(UniverSheetsPlugin);
+univer.registerPlugin(UniverFormulaEnginePlugin);
+univer.registerPlugin(UniverRPCWorkerThreadPlugin);

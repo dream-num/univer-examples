@@ -613,7 +613,7 @@ export const ALL_FEATURES_DOCUMENT_DATA = {
                     "bg": {
                         "rgb": "rgb(255,255,255)"
                     },
-                    "it": 1,
+                    "it": 0,
                     "bl": 0,
                     "fs": 12
                 }
@@ -644,7 +644,7 @@ export const ALL_FEATURES_DOCUMENT_DATA = {
                     "bg": {
                         "rgb": "rgb(255,255,255)"
                     },
-                    "it": 1,
+                    "it": 0,
                     "bl": 0,
                     "fs": 12
                 }

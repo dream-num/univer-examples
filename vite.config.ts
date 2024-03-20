@@ -22,6 +22,7 @@ export default defineConfig({
             'sheets': resolve(__dirname, 'sheets/index.html'),
             'sheets-multi': resolve(__dirname, 'sheets-multi/index.html'),
             'sheets-uniscript': resolve(__dirname, 'sheets-uniscript/index.html'),
+            'sheets-big-data': resolve(__dirname, 'sheets-big-data/index.html'),
           },
         },
       },
