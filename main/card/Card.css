@@ -2,18 +2,13 @@
 .card {
   background-color: #fff;
   overflow: hidden;
-  transition: transform 0.3s ease;
   border-bottom: 1px solid #E0E2E5;
-}
-
-.card:hover {
-  transform: translateY(-5px);
 }
 
 .card__image-placeholder {
   background-color: #f0f0f0;
   /* Placeholder color, replace with actual image styles */
-  height: 200px;
+  height: 216px;
   /* Adjust as per your design */
   display: flex;
   align-items: center;
@@ -22,7 +17,13 @@
   color: #ccc;
   border-radius: 16px;
   padding: 16px;
-  background: #F0F3FF;
+  background: #676EBC;
+  box-sizing: border-box;
+  transition: padding 0.3s ease;
+}
+
+.card__image-placeholder:hover {
+  padding: 12px;
 }
 
 .card__image-placeholder__inner {

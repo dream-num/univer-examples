@@ -10,7 +10,7 @@ const Header: React.FC<HeaderProps> = () => {
 
   return (
     <header className="header">
-      <a href="https://univer.ai" rel="nofollow" target='_blank' title='univer' className="header__logo"><img src={`/read-me-light.svg`} alt="Logo" /></a>
+      <a href="https://univer.ai" rel="nofollow" target='_blank' title='univer' className="header__logo"><img src={`./assets/img/read-me-light.svg`} alt="Logo" /></a>
 
       <div className="header__actions">
         {/* <button onClick={handleLanguageChange} className="header__language-toggle">
