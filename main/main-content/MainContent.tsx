@@ -12,7 +12,7 @@ const MainContent: React.FC = () => {
       Rich Examples and guidance demonstrate Univer's various powerful capabilities, helping you quickly find the functions you want.
       </p>
       <div className="main-content__buttons">
-      <a className="main-content__button main-content__button--started" href="https://univer.ai" rel="nofollow" target='_blank' title="get started"><span>Get started</span></a>
+      <a className="main-content__button main-content__button--started" href="https://univer.ai" rel="nofollow" target='_blank' title="get started">Get started</a>
         <a className="main-content__button main-content__button--github" href="https://github.com/dream-num/univer" rel="nofollow" target='_blank' title="github">
         <GithubSingle24 className="main-content__github-icon"/>
           <span className="main-content__github-content" >GitHub</span>

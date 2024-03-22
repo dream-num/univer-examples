@@ -69,33 +69,25 @@
     cursor: pointer;
     overflow: hidden;
     display: inline-block;
+
+    color: #F8F9FC;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
     /* Make sure the button wraps the text appropriately */
 }
 
-.main-content__button--started:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background-color: #5357ED;
-    transition: width 0.5s ease-in-out;
-    z-index: 1;
-    /* Make sure this value is less than the z-index of the text*/
-}
-
-.main-content__button--started:hover:before {
-    width: 100%;
-}
-
-.main-content__button--started span {
-    position: relative;
-    z-index: 2;
-    /* Make sure the z-index of the text is higher than the pseudo-element */
+.main-content__button--started:hover {
+    background: linear-gradient(90deg, #5357ed 0%, #5357ED 104.41%);
 }
 
 .main-content__button--github {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
     background: #393E46;
 }
 

@@ -1,15 +1,23 @@
 /* Header.css */
 .header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
-  background-color: #fff;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-     */
-  border-bottom: 1px solid #ECEDED;
-  ;
+  position: sticky;
+  top: 0;
+  height: 68px;
   background: #FFF;
+  border-bottom: 1px solid #ECEDED;
+  box-shadow: 0px 4px 24px 0px rgba(31,35,39,0.04);
+  /* box-shadow: 0px 4px 0px 0px rgba(31,35,39,0.04); */
+  z-index: 1;
+}
+
+.header-content{
+     max-width: 1200px;
+    height: 100%;
+    padding: 0 24px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .header__logo {
@@ -30,13 +38,23 @@
   display: inline-block;
   text-decoration: none;
   padding: 0px 24px;
-  line-height: 36px;
   border: none;
   cursor: pointer;
 
   border-radius: 32px;
   background: var(--button, linear-gradient(90deg, #5357ED 0%, #40B9FF 104.41%));
   color: white;
+
+  color: #F8F9FC;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.header__join-waitlist:hover {
+  background: linear-gradient(90deg, #5357ed 0%, #5357ED 104.41%);
 }
 
 /* Responsive Design */

@@ -27,7 +27,7 @@ export const UNISCRIT_WORKBOOK_DATA_DEMO: IWorkbookData = {
     sheets: {
         'sheet-01': {
             id: 'sheet-01',
-            name: '身份信息统计表',
+            name: 'Info',
             tabColor: '',
             hidden: 0,
             rowCount: 1000,
