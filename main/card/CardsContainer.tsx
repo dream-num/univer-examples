@@ -25,7 +25,7 @@ const cardsData = [
     {
       title: 'Sheets Big Data',
       url: './sheets-big-data/',
-      description: 'Large data volume Univer Sheets, a table containing 10M cell data.',
+      description: 'Large data volume Univer Sheets, a table containing 10,000,000 cell data.',
       img: './assets/img/examples-sheets-big-data.gif'
     },
     {
@@ -45,6 +45,12 @@ const cardsData = [
       url: './docs-uniscript/',
       description: 'Powerful scripting capabilities with Docs Uniscript.',
       img: './assets/img/examples-docs-uniscript.gif'
+    },
+    {
+      title: 'Docs Big Data',
+      url: './docs-big-data/',
+      description: 'Large data volume Univer Docs, a document containing 1,000,000 characters.',
+      img: './assets/img/examples-docs-big-data.gif'
     },
   ];
   

@@ -19,6 +19,7 @@ export default defineConfig({
             docs: resolve(__dirname, 'docs/index.html'),
             'docs-multi': resolve(__dirname, 'docs-multi/index.html'),
             'docs-uniscript': resolve(__dirname, 'docs-uniscript/index.html'),
+            'docs-big-data': resolve(__dirname, 'docs-big-data/index.html'),
             'sheets': resolve(__dirname, 'sheets/index.html'),
             'sheets-multi': resolve(__dirname, 'sheets-multi/index.html'),
             'sheets-uniscript': resolve(__dirname, 'sheets-uniscript/index.html'),
