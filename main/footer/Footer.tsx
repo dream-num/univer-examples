@@ -7,11 +7,11 @@ const footerLinks = [
     links: [
       {
         label: 'Blog',
-        url: 'https://univer.ai/en-us/blog/'
+        url: 'https://univer.ai/blog'
       },
       {
         label: 'Contact us',
-        url: 'https://univer.ai/en-us/enterprises'
+        url: 'https://univer.ai/workspace/#contact-us'
       },
     ]
   },
@@ -19,15 +19,15 @@ const footerLinks = [
     title: 'Resources',
     links: [
       {
-        label: 'Developer Docs',
-        url: 'https://univer.ai/en-us/guides/introduction'
+        label: 'Guides',
+        url: 'https://univer.ai/guides/introduction'
       },
       {
-        label: 'API',
+        label: 'Plugins',
         url: 'https://univer.ai/api'
       },
       {
-        label: 'Univer Icon',
+        label: 'Univer Icons',
         url: 'https://univer.ai/icons'
       },
     ]
@@ -54,7 +54,7 @@ const footerLinks = [
       },
       {
         label: 'Troubleshooting',
-        url: 'https://univer.ai/en-us/guides/troubleshooting'
+        url: 'https://univer.ai/guides/troubleshooting'
       },
       {
         label: 'Bug report',
