@@ -97,11 +97,3 @@ ReactDOM.render(App, document.getElementById("container"));
 factory("app-a")();
 factory("app-b")();
 factory("app-c")();
-
-// Get all iframes on the page
-const iframes = document.getElementsByTagName('iframe');
-
-// Remove found iframes one by one
-for (let i = iframes.length - 1; i >= 0; i--) {
-     iframes[i].remove()
-}

@@ -52,6 +52,12 @@ const cardsData = [
       description: 'Large data volume Univer Docs, a document containing 1,000,000 characters.',
       img: './assets/img/examples-docs-big-data.gif'
     },
+    {
+      title: 'Slides',
+      url: './slides/',
+      description: 'Create and edit presentations with our Slides feature.',
+      img: './assets/img/examples-slides.gif'
+    },
   ];
   
 

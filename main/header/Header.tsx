@@ -18,7 +18,7 @@ const Header: React.FC<HeaderProps> = () => {
           {/* <button onClick={handleLanguageChange} className="header__language-toggle">
           Language
         </button> */}
-          <a href="https://discord.gg/z3NKNT6D2f" rel="nofollow" target='_blank' title='univer' className="header__join-waitlist">
+          <a href="https://univer.ai/workspace/#contact-us" rel="nofollow" target='_blank' title='univer' className="header__join-waitlist">
             Join Waitlist
           </a>
         </div>

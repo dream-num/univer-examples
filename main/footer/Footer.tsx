@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
         <FooterSection key={index} section={section} />
       ))}
       <div className="footer__copyright">
-        <p>&copy; Copyright © 2021-2024 Mengshu. All Rights Reserved. Copyright © 2021-2024 Dreamnum Co,Ltd</p>
+        <p>Copyright © 2021-2024 Shanghai DreamNum Technology Co., Ltd. All Rights Reserved.</p>
       </div>
     </footer>
   );
