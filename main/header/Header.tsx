@@ -12,13 +12,13 @@ const Header: React.FC<HeaderProps> = () => {
     <header className="header">
 
       <nav className='header-content'>
-        <a href="https://univer.ai" rel="nofollow" target='_blank' title='univer' className="header__logo"><img src={`./assets/img/read-me-light.svg`} alt="Logo" /></a>
+        <a href="https://univer.ai" title='univer' className="header__logo"><img src={`./assets/img/read-me-light.svg`} alt="Logo" /></a>
 
         <div className="header__actions">
           {/* <button onClick={handleLanguageChange} className="header__language-toggle">
           Language
         </button> */}
-          <a href="https://univer.ai/workspace/#contact-us" rel="nofollow" target='_blank' title='univer' className="header__join-waitlist">
+          <a href="https://univer.ai/workspace/#contact-us" title='univer' className="header__join-waitlist">
             Join Waitlist
           </a>
         </div>

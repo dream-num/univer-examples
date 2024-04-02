@@ -82,7 +82,7 @@ const FooterSection: React.FC<{ section: Section }> = ({ section }) => {
       <ul className="footer__link-list">
         {section.links.map((link, index) => (
           <li key={index} className="footer__link-item">
-            <a href={link.url} className="footer__link" rel="nofollow" target='_blank' title={link.label}>{link.label}</a>
+            <a href={link.url} className="footer__link" title={link.label}>{link.label}</a>
           </li>
         ))}
       </ul>
