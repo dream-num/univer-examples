@@ -13,6 +13,11 @@ import { UniverSheetsNumfmtPlugin } from "@univerjs/sheets-numfmt";
 import { UniverSheetsUIPlugin } from "@univerjs/sheets-ui";
 import { UniverUIPlugin } from "@univerjs/ui";
 import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
+import { UniverFindReplacePlugin } from '@univerjs/find-replace';
+import { UniverSheetsFindReplacePlugin } from '@univerjs/sheets-find-replace';
+import { UniverDataValidationPlugin } from '@univerjs/data-validation';
+import { UniverSheetsDataValidationPlugin } from '@univerjs/sheets-data-validation';
+import { SheetsConditionalFormattingUiPlugin } from '@univerjs/sheets-conditional-formatting-ui';
 import { DebuggerPlugin } from '../plugins/debugger';
 import { ALL_FEATURES_WORKBOOK_DATA } from "../data/sheets/demo/features";
 import { locales } from "./locales";
@@ -54,9 +59,21 @@ univer.registerPlugin(UniverSheetsFormulaPlugin);
 //   workerURL: './worker.js',
 // } as IUniverRPCMainThreadConfig);
 univer.registerPlugin(UniverSheetsZenEditorPlugin);
+
+// find replace
+univer.registerPlugin(UniverFindReplacePlugin);
+
+// data validation
+univer.registerPlugin(UniverDataValidationPlugin);
+univer.registerPlugin(UniverSheetsDataValidationPlugin);
+univer.registerPlugin(UniverSheetsFindReplacePlugin);
+
+// sheet condition formatting
+
 // create univer sheet instance
 univer.createUniverSheet(ALL_FEATURES_WORKBOOK_DATA);
 
+univer.registerPlugin(SheetsConditionalFormattingUiPlugin);
 // setTimeout(() => {
 //   import('./lazy').then((lazy) => {
 //       const plugins = lazy.default();

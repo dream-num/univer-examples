@@ -4,12 +4,306 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
   "id": "workbook-01",
   "sheetOrder": [
     "sheet-01",
-    "sheet-02"
+    "sheet-02",
+    "sheet-03",
   ],
   "name": "Sheets Feature",
   "appVersion": "",
   "locale": LocaleType.EN_US,
   "styles": {
+    "6c94m6": {
+      "fs": 48,
+      "ff": "\"avenir next lt pro\", sans-serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 3
+    },
+    "B1vjvF": {
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", sans-serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 3
+    },
+    "Dn_vXy": {
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", sans-serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 2
+    },
+    "hxUmEQ": {
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(254,53,37)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(254,53,37)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(254,53,37)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(254,53,37)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 3
+    },
+    "GfrCD5": {
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 3
+    },
+    "foRljO": {
+      "cl": {
+        "rgb": "white"
+      },
+      "bl": 0,
+      "bg": {
+        "rgb": "#003780"
+      },
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", sans-serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 2
+    },
+    "y15EPd": {
+      "bg": {},
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", sans-serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 2
+    },
+    "M7Augs": {
+      "bg": {
+        "rgb": "#f2f2f2"
+      },
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", sans-serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(0,0,0)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 2
+    },
+    "oGZ6Jw": {
+      "bg": {
+        "rgb": "#f2f2f2"
+      },
+      "fs": 10,
+      "ff": "\"avenir next lt pro\", sans-serif",
+      "bd": {
+        "r": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "t": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "b": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        },
+        "l": {
+          "cl": {
+            "rgb": "rgb(255,255,255)"
+          },
+          "s": 0
+        }
+      },
+      "vt": 2
+    },
     "c8yB8V": {
       "bl": 1
     },
@@ -4573,12 +4867,543 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
         "A1"
       ],
       "rightToLeft": 0,
+    },
+    "sheet-03":{
+      "name": "Data Validation",
+      "id": "sheet-03",
+      "tabColor": "",
+      "hidden": 0,
+      "rowCount": 999,
+      "columnCount": 20,
+      "zoomRatio": 1,
+      "freeze": {
+        "xSplit": 0,
+        "ySplit": 0,
+        "startRow": -1,
+        "startColumn": -1
+      },
+      "scrollTop": 0,
+      "scrollLeft": 0,
+      "defaultColumnWidth": 73,
+      "defaultRowHeight": 19,
+      "mergeData": [
+        {
+          "startRow": 0,
+          "endRow": 0,
+          "startColumn": 0,
+          "endColumn": 3
+        },
+        {
+          "startRow": 1,
+          "endRow": 1,
+          "startColumn": 0,
+          "endColumn": 1
+        },
+        {
+          "startRow": 1,
+          "endRow": 1,
+          "startColumn": 2,
+          "endColumn": 3
+        },
+        {
+          "startRow": 2,
+          "endRow": 2,
+          "startColumn": 0,
+          "endColumn": 1
+        },
+        {
+          "startRow": 2,
+          "endRow": 2,
+          "startColumn": 2,
+          "endColumn": 3
+        }
+      ],
+      "cellData": {
+        "0": {
+          "0": {
+            "v": "TO-DO LIST",
+            "t": 1,
+            "s": "6c94m6"
+          },
+          "1": {
+            "v": "",
+            "t": 1
+          },
+          "2": {
+            "v": "",
+            "t": 1
+          },
+          "3": {
+            "v": "",
+            "t": 1
+          }
+        },
+        "1": {
+          "0": {
+            "v": "TO BE COMPLETED BY",
+            "t": 1,
+            "s": "B1vjvF"
+          },
+          "1": {
+            "v": "",
+            "t": 1
+          },
+          "2": {
+            "v": "Iris Lepik",
+            "t": 1,
+            "s": "B1vjvF"
+          },
+          "3": {
+            "v": "",
+            "t": 1
+          }
+        },
+        "2": {
+          "0": {
+            "v": "DEADLINE",
+            "t": 1,
+            "s": "Dn_vXy"
+          },
+          "1": {
+            "v": "",
+            "t": 1
+          },
+          "2": {
+            "v": "01/31/20XX",
+            "t": 1,
+            "s": "Dn_vXy"
+          },
+          "3": {
+            "v": "",
+            "t": 1
+          }
+        },
+        "3": {
+          "0": {
+            "v": "",
+            "t": 1,
+            "s": "hxUmEQ"
+          },
+          "1": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          },
+          "2": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          },
+          "3": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          }
+        },
+        "4": {
+          "0": {
+            "v": "% Done",
+            "t": 1,
+            "s": "foRljO"
+          },
+          "1": {
+            "v": "Phase",
+            "t": 1,
+            "s": "foRljO"
+          },
+          "2": {
+            "v": "Due By",
+            "t": 1,
+            "s": "foRljO"
+          },
+          "3": {
+            "v": "Notes",
+            "t": 1,
+            "s": "foRljO"
+          },
+          "4": {
+            "v": "Tags",
+            "t": 1,
+            "s": "foRljO"
+          },
+          "8": {
+            "v": "Planning",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "5": {
+          "0": {
+            "s": "M7Augs",
+            "v": 1,
+            "t": 2
+          },
+          "1": {
+            "s": "oGZ6Jw",
+            "v": "Preparation",
+            "t": 1
+          },
+          "2": {
+            "s": "M7Augs",
+            "v": "2024/04/18",
+            "t": 1
+          },
+          "3": {
+            "v": "Research local contractors",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw",
+            "v": "Daily,Baseline,Buessiness",
+            "t": 1
+          },
+          "8": {
+            "v": "Preparation",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "6": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw",
+            "v": "Preparation",
+            "t": 1
+          },
+          "2": {
+            "s": "M7Augs",
+            "v": "2024/04/17",
+            "t": 1
+          },
+          "3": {
+            "v": "Select winning bid",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw",
+            "v": "Daily,Baseline",
+            "t": 1
+          },
+          "8": {
+            "v": "Task a",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "7": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw",
+            "v": "Task b",
+            "t": 1
+          },
+          "2": {
+            "s": "M7Augs"
+          },
+          "3": {
+            "v": "Consult",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw",
+            "v": "Daily,Baseline,Buessiness",
+            "t": 1
+          },
+          "8": {
+            "v": "Task b",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "8": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw"
+          },
+          "2": {
+            "s": "M7Augs"
+          },
+          "3": {
+            "v": "Follow-up meeting",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw"
+          },
+          "8": {
+            "v": "Task c",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "9": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw"
+          },
+          "2": {
+            "s": "M7Augs"
+          },
+          "3": {
+            "v": "Sign paperwork",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw"
+          },
+          "8": {
+            "v": "Task d",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "10": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw"
+          },
+          "2": {
+            "s": "M7Augs"
+          },
+          "3": {
+            "v": "Begin work ",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw"
+          },
+          "8": {
+            "v": "Paperwork",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "11": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw"
+          },
+          "2": {
+            "s": "M7Augs"
+          },
+          "3": {
+            "v": "Mail in",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw"
+          },
+          "8": {
+            "v": "Complete",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "12": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw"
+          },
+          "2": {
+            "s": "M7Augs"
+          },
+          "3": {
+            "v": "Inspection",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw"
+          },
+          "8": {
+            "v": "Follow-up",
+            "t": 1,
+            "s": "y15EPd"
+          }
+        },
+        "13": {
+          "0": {
+            "s": "M7Augs"
+          },
+          "1": {
+            "s": "oGZ6Jw"
+          },
+          "2": {
+            "s": "M7Augs"
+          },
+          "3": {
+            "v": "Meeting",
+            "t": 1,
+            "s": "oGZ6Jw"
+          },
+          "4": {
+            "s": "oGZ6Jw"
+          }
+        },
+        "14": {
+          "0": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          },
+          "1": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          },
+          "2": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          },
+          "3": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          },
+          "4": {
+            "v": "",
+            "t": 1,
+            "s": "GfrCD5"
+          }
+        }
+      },
+      "rowData": {
+        "0": {
+          "hd": 0,
+          "h": 60
+        },
+        "1": {
+          "hd": 0,
+          "h": 30
+        },
+        "2": {
+          "hd": 0,
+          "h": 30
+        },
+        "3": {
+          "hd": 0,
+          "h": 15
+        },
+        "4": {
+          "hd": 0,
+          "h": 30,
+          "ah": 19
+        },
+        "5": {
+          "hd": 0,
+          "h": 30,
+          "ah": 48
+        },
+        "6": {
+          "hd": 0,
+          "h": 30,
+          "ah": 28
+        },
+        "7": {
+          "hd": 0,
+          "h": 30,
+          "ah": 48
+        },
+        "8": {
+          "hd": 0,
+          "h": 30
+        },
+        "9": {
+          "hd": 0,
+          "h": 30
+        },
+        "10": {
+          "hd": 0,
+          "h": 30
+        },
+        "11": {
+          "hd": 0,
+          "h": 30
+        },
+        "12": {
+          "hd": 0,
+          "h": 30
+        },
+        "13": {
+          "hd": 0,
+          "h": 30
+        },
+        "14": {
+          "hd": 0,
+          "h": 30
+        }
+      },
+      "columnData": {
+        "0": {
+          "w": 202.99609375,
+          "hd": 0
+        },
+        "1": {
+          "w": 202.99609375,
+          "hd": 0
+        },
+        "2": {
+          "w": 202.99609375,
+          "hd": 0
+        },
+        "3": {
+          "w": 202.99609375,
+          "hd": 0
+        },
+        "4": {
+          "w": 163.2109375,
+          "hd": 0
+        },
+        "8": {
+          "w": 202.99609375,
+          "hd": 0
+        }
+      },
+      "showGridlines": 1,
+      "rowHeader": {
+        "width": 46,
+        "hidden": 0
+      },
+      "columnHeader": {
+        "height": 20,
+        "hidden": 0
+      },
+      "selections": [
+        "A1"
+      ],
+      "rightToLeft": 0
     }
   },
   "resources": [
     {
       "name": "SHEET_NUMFMT_PLUGIN",
       "data": "{\"model\":{\"sheet-01\":{\"21\":{\"3\":{\"i\":\"2\"}}}},\"refModel\":[{\"count\":1,\"i\":\"2\",\"pattern\":\"\\\"$\\\"#,##0.00_);\\\"$\\\"#,##0.00\",\"type\":\"currency\"}]}"
-    }
+    },
+    {
+      "name": "SHEET_DATA_VALIDATION",
+      "data": '{"sheet-03":[{"uid":"Ib_-Us","type":"checkbox","ranges":[{"startRow":5,"startColumn":0,"endRow":13,"endColumn":0,"rangeType":0}]},{"uid":"IFukfi","type":"list","formula1":"I5:I13","ranges":[{"startRow":5,"startColumn":1,"endRow":13,"endColumn":1,"rangeType":0}],"formula2":"#FEE7E7,#FEF0E6,#EFFBD0,#E4F4FE,#E8ECFD,#F1EAFA,#E5E5E5,#FDCECE,#FDC49B"},{"uid":"qTsxc-","type":"listMultiple","formula1":"Daily,Baseline,Buessiness","ranges":[{"startRow":5,"startColumn":4,"endRow":13,"endColumn":4,"rangeType":0}],"formula2":"#F1EAFA,#DEF6A2,#8BBB11"},{"uid":"DMzS5Z","type":"date","operator":"greaterThanOrEqual","formula1":"=today()","ranges":[{"startRow":5,"startColumn":2,"endRow":13,"endColumn":2,"rangeType":0}]}]}'
+    },
   ]
 }
