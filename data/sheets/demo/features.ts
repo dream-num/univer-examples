@@ -3510,7 +3510,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "t": 2
           },
           "7": {
-            "f": "=SUBTOTAL(9,OFFSET($D$15,ROW($D$15:$D$18)-ROW($D$15),1,3))",
+            "f": "=SUBTOTAL(9,OFFSET($D$15,ROW($D$15)-ROW($D$15),1,3))",
             "t": 1
           },
           "8": {
@@ -3556,7 +3556,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "t": 2
           },
           "7": {
-            "f": '=SUBTOTAL(9,OFFSET(E15,ROW(E15:E18)-ROW(E15),1,3))',
+            "f": '=SUBTOTAL(9,OFFSET(E15,ROW(E15)-ROW(E15),1,3))',
           },
           "8": {
             "v": "",
@@ -3601,7 +3601,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "t": 2
           },
           "7": {
-            "f": '=SUBTOTAL(9,OFFSET(F15,ROW(F15:F18)-ROW(F15),1,3))'
+            "f": '=SUBTOTAL(9,OFFSET(F15,ROW(F15)-ROW(F15),1,3))'
           },
           "8": {
             "v": "",
@@ -3646,7 +3646,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
             "t": 2
           },
           "7": {
-            "f": '=SUBTOTAL(9,OFFSET(G15,ROW(G15:G18)-ROW(G15),1,3))'
+            "f": '=SUBTOTAL(9,OFFSET(G15,ROW(G15)-ROW(G15),1,3))'
           },
           "8": {
             "v": "",
