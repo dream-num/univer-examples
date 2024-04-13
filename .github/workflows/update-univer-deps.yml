@@ -30,7 +30,7 @@ jobs:
     - name: Install dependencies with pnpm
       run: |
         pnpm i
-        pnpm up '@univerjs/*'
+        pnpm up '@univerjs/*' --latest
 
     - name: Commit and push if there are updates
       run: |
