@@ -46,13 +46,10 @@ univer.registerPlugin(UniverRenderEnginePlugin);
 univer.registerPlugin(UniverUIPlugin, {
     container: 'app',
     header: true,
-    toolbar: true,
     footer: true,
 });
     // docs plugin
-univer.registerPlugin(UniverDocsPlugin, {
-    standalone: true,
-});
+univer.registerPlugin(UniverDocsPlugin);
 univer.registerPlugin(UniverDocsUIPlugin);
 univer.registerPlugin(UniverSheetsPlugin);
 univer.registerPlugin(UniverSheetsUIPlugin);

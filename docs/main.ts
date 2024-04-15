@@ -41,12 +41,9 @@ univer.registerPlugin(UniverFormulaEnginePlugin);
 univer.registerPlugin(DebuggerPlugin);
 univer.registerPlugin(UniverUIPlugin, {
     container: 'app',
-    header: true,
-    toolbar: true,
+    header: true
 });
-univer.registerPlugin(UniverDocsPlugin, {
-    standalone: true,
-});
+univer.registerPlugin(UniverDocsPlugin);
 univer.registerPlugin(UniverDocsUIPlugin);
 
 univer.createUniverDoc(ALL_FEATURES_DOCUMENT_DATA);

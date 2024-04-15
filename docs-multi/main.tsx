@@ -30,12 +30,9 @@ function factory(id: string) {
     univer.registerPlugin(UniverUIPlugin, {
       container: id,
       header: true,
-      toolbar: true,
     });
     // docs plugin
-    univer.registerPlugin(UniverDocsPlugin, {
-      standalone: true,
-    });
+    univer.registerPlugin(UniverDocsPlugin);
     univer.registerPlugin(UniverDocsUIPlugin);
     
 

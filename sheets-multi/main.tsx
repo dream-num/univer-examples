@@ -34,13 +34,10 @@ function factory(id: string) {
     univer.registerPlugin(UniverUIPlugin, {
       container: id,
       header: true,
-      toolbar: true,
       footer: true,
     });
     // docs plugin
-    univer.registerPlugin(UniverDocsPlugin, {
-      standalone: true,
-    });
+    univer.registerPlugin(UniverDocsPlugin);
     univer.registerPlugin(UniverDocsUIPlugin);
     // sheets plugin
     univer.registerPlugin(UniverSheetsPlugin);

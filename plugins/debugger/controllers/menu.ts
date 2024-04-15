@@ -60,10 +60,12 @@ export function ThemeMenuItemFactory(accessor: IAccessor): IMenuSelectorItem {
         selections: [
             {
                 label: 'green',
+                // @ts-expect-error: value is not a string
                 value: greenTheme,
             },
             {
                 label: 'default',
+                // @ts-expect-error: value is not a string
                 value: defaultTheme,
             },
         ],

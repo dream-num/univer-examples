@@ -84,9 +84,7 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
     },
     "P_LfgH": {
       "ht": 2,
-      "vt": 2,
-      "it": null,
-      "bl": null
+      "vt": 2
     },
     "oPDqeZ": {
       "ht": 2,
@@ -125,12 +123,6 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
       "bg": {}
     },
     "lskhIP": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null,
-      "4": null,
-      "5": null,
       "bg": {
         "rgb": "rgb(31, 121, 226)"
       },
@@ -188,12 +180,6 @@ export const ALL_FEATURES_WORKBOOK_DATA: IWorkbookData = {
       }
     },
     "pjT2w4": {
-      "0": null,
-      "1": null,
-      "2": null,
-      "3": null,
-      "4": null,
-      "5": null,
       "bg": {
         "rgb": "rgb(31, 121, 226)"
       },
