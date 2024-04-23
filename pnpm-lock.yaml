@@ -1158,7 +1158,7 @@ packages:
       '@wendellhu/redi': 0.13.0
       rxjs: '>=7.0.0'
     dependencies:
-      '@univerjs/protocol': 0.1.18(@grpc/grpc-js@1.10.6)(rxjs@7.8.1)
+      '@univerjs/protocol': 0.1.19(@grpc/grpc-js@1.10.6)(rxjs@7.8.1)
       '@wendellhu/redi': 0.13.0
       dayjs: 1.11.10
       nanoid: 5.0.7
@@ -1201,7 +1201,7 @@ packages:
       rc-input: 1.4.5(react-dom@18.2.0)(react@18.2.0)
       rc-input-number: 9.0.0(react-dom@18.2.0)(react@18.2.0)
       rc-menu: 9.13.0(react-dom@18.2.0)(react@18.2.0)
-      rc-picker: 4.4.1(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0)
+      rc-picker: 4.4.2(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0)
       rc-segmented: 2.3.0(react-dom@18.2.0)(react@18.2.0)
       rc-select: 14.13.1(react-dom@18.2.0)(react@18.2.0)
       rc-textarea: 1.6.3(react-dom@18.2.0)(react@18.2.0)
@@ -1365,8 +1365,8 @@ packages:
       rxjs: 7.8.1
     dev: false
 
-  /@univerjs/protocol@0.1.18(@grpc/grpc-js@1.10.6)(rxjs@7.8.1):
-    resolution: {integrity: sha512-ZDsPjv/jtojqRnhsEtc6tvErLvdjIbxMluGwGP4DdBdsagpGG3pYBu2BgHufHlnjvEZkryEd7MYTGyTkdc29+Q==}
+  /@univerjs/protocol@0.1.19(@grpc/grpc-js@1.10.6)(rxjs@7.8.1):
+    resolution: {integrity: sha512-FmSezbI29MZr9IS8U9cGlWHbxMiM4NO3cCrhG3S5sH+69BGUppHqHI7psoP7CqGyowxaZN5dDDfSNTbrHenYVQ==}
     engines: {node: '>=16.0.0', npm: '>=8.0.0'}
     peerDependencies:
       '@grpc/grpc-js': ^1.9.14
@@ -2980,8 +2980,8 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /rc-picker@4.4.1(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-9/1pV12lMmUZtAbH0Sv/RIkeTdw/HSZs5G4GZFQ9UECLkCjOqhr9UF5Mf8dPuQ3xmw23SbXzOgDquN6eLFmZDw==}
+  /rc-picker@4.4.2(dayjs@1.11.10)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-MdbAXvwiGyhb+bHe66qPps8xPQivzEgcyCp3/MPK4T+oER0gOmVRCEDxaD4FhYG/7GLH3rDrHpu79BvEn2JFTQ==}
     engines: {node: '>=8.x'}
     peerDependencies:
       date-fns: '>= 2.x'
