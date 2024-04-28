@@ -14,11 +14,11 @@
  * limitations under the License.
  */
 
-import { Disposable, ICommandService, ISnapshotPersistenceService, IUniverInstanceService } from '@univerjs/core';
+import { Disposable, ICommandService } from '@univerjs/core';
 import { IMenuService } from '@univerjs/ui';
 import { Inject, Injector } from '@wendellhu/redi';
 
-import { ExportController, LocalSnapshotService, RecordController } from '../../local-save';
+import { ExportController, RecordController } from '../../local-save';
 import { ConfirmOperation } from '../commands/operations/confirm.operation';
 import { DialogOperation } from '../commands/operations/dialog.operation';
 import { LocaleOperation } from '../commands/operations/locale.operation';
@@ -41,11 +41,10 @@ import {
 } from './menu';
 
 export class DebuggerController extends Disposable {
-    constructor(
+    constructor (
         @Inject(Injector) private readonly _injector: Injector,
         @IMenuService private readonly _menuService: IMenuService,
         @ICommandService private readonly _commandService: ICommandService,
-        @Inject(IUniverInstanceService) private _univerInstanceService: IUniverInstanceService
     ) {
         super();
         this._initializeContextMenu();
@@ -62,12 +61,11 @@ export class DebuggerController extends Disposable {
             SaveSnapshotOptions,
         ].forEach((command) => this.disposeWithMe(this._commandService.registerCommand(command)));
 
-        this._injector.add([ISnapshotPersistenceService, { useClass: LocalSnapshotService }]);
         this._injector.add([ExportController]);
         this._injector.add([RecordController]);
     }
 
-    private _initializeContextMenu() {
+    private _initializeContextMenu () {
         [
             LocaleMenuItemFactory,
             ThemeMenuItemFactory,

@@ -1,7 +1,7 @@
 
 import "./style.css";
 
-import { LocaleType, LogLevel, Univer } from "@univerjs/core";
+import { LocaleType, LogLevel, Univer, UniverInstanceType } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
@@ -68,7 +68,7 @@ univer.registerPlugin(UniverSheetsFindReplacePlugin);
 // sheet condition formatting
 
 // create univer sheet instance
-univer.createUniverSheet(ALL_FEATURES_WORKBOOK_DATA);
+univer.createUnit(UniverInstanceType.UNIVER_SHEET, ALL_FEATURES_WORKBOOK_DATA);
 
 univer.registerPlugin(UniverSheetsConditionalFormattingUIPlugin);
 // setTimeout(() => {

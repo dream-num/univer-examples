@@ -15,8 +15,8 @@
  */
 
 /* eslint-disable node/prefer-global/process */
-import type { ICommand, IStyleData, IWorkbookData } from '@univerjs/core';
-import { CommandType, ISnapshotPersistenceService, IUniverInstanceService, ObjectMatrix } from '@univerjs/core';
+import type { ICommand, IStyleData, IWorkbookData, Workbook } from '@univerjs/core';
+import { CommandType, IResourceLoaderService, IUniverInstanceService, ObjectMatrix, UniverInstanceType } from '@univerjs/core';
 import type { IAccessor } from '@wendellhu/redi';
 
 import { ExportController, RecordController } from '../../../local-save';
@@ -48,13 +48,13 @@ export const SaveSnapshotOptions: ICommand = {
     type: CommandType.OPERATION,
     handler: async (accessor: IAccessor, params: ISaveSnapshotParams) => {
         const univerInstanceService = accessor.get(IUniverInstanceService);
-        const localPersistenceService = accessor.get(ISnapshotPersistenceService);
+        const resourceLoaderService = accessor.get(IResourceLoaderService);
         const exportController = accessor.get(ExportController);
         const recordController = accessor.get(RecordController);
 
-        const workbook = univerInstanceService.getCurrentUniverSheetInstance();
+        const workbook = univerInstanceService.getCurrentUnitForType<Workbook>(UniverInstanceType.UNIVER_SHEET)!;
         const worksheet = workbook.getActiveSheet();
-        const snapshot = localPersistenceService.saveWorkbook(workbook);
+        const snapshot = resourceLoaderService.saveWorkbook(workbook);
         const gitHash = process.env.GIT_COMMIT_HASH;
         const gitBranch = process.env.GIT_REF_NAME;
         const buildTime = process.env.BUILD_TIME;
@@ -66,12 +66,13 @@ export const SaveSnapshotOptions: ICommand = {
                 const sheet = snapshot.sheets[sheetId];
                 snapshot.sheets = { [sheetId]: sheet };
                 snapshot.sheetOrder = [sheetId];
+                const text = JSON.stringify(filterStyle(snapshot), null, 2);
+                exportController.exportJson(text, `${preName} snapshot`);
                 break;
             }
 
             case 'workbook': {
                 const text = JSON.stringify(filterStyle(snapshot), null, 2);
-                // navigator.clipboard.writeText(text);
                 exportController.exportJson(text, `${preName} snapshot`);
 
                 break;

@@ -1,7 +1,7 @@
 
 import "./style.css";
 
-import { LocaleType, LogLevel, Univer } from "@univerjs/core";
+import { LocaleType, LogLevel, Univer, UniverInstanceType } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
@@ -32,12 +32,9 @@ univer.registerPlugin(UniverRenderEnginePlugin);
 univer.registerPlugin(UniverUIPlugin, {
   container: "app",
   header: true,
-  toolbar: true,
   footer: true,
 });
-univer.registerPlugin(UniverDocsPlugin, {
-  standalone: true,
-});
+univer.registerPlugin(UniverDocsPlugin);
 univer.registerPlugin(UniverDocsUIPlugin);
 univer.registerPlugin(UniverSheetsPlugin);
 univer.registerPlugin(UniverSheetsUIPlugin);
@@ -55,7 +52,7 @@ univer.registerPlugin(UniverSheetsFormulaPlugin);
 // } as IUniverRPCMainThreadConfig);
 univer.registerPlugin(UniverSheetsZenEditorPlugin);
 // create univer sheet instance
-univer.createUniverSheet(generateWorkbookData(1000000,10));
+univer.createUnit(UniverInstanceType.UNIVER_SHEET, generateWorkbookData(1000000,10));
 
 // setTimeout(() => {
 //   import('./lazy').then((lazy) => {

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import { LocaleService, Plugin, PluginType } from '@univerjs/core';
+import { LocaleService, Plugin } from '@univerjs/core';
 import type { Dependency } from '@wendellhu/redi';
 import { Inject, Injector } from '@wendellhu/redi';
 
@@ -25,19 +25,17 @@ import { ScriptEditorService } from './services/script-editor.service';
 import { UniscriptExecutionService } from './services/script-execution.service';
 import { ScriptPanelService } from './services/script-panel.service';
 
-const PLUGIN_NAME = 'uniscript';
-
 export interface IUniscriptConfig extends IScriptEditorServiceConfig { }
 
 export class UniverUniscriptPlugin extends Plugin {
-    static override type = PluginType.Univer;
+    static override pluginName = 'uniscript';
 
     constructor(
         private readonly _config: IUniscriptConfig,
         @Inject(Injector) protected override _injector: Injector,
         @Inject(LocaleService) private readonly _localeService: LocaleService
     ) {
-        super(PLUGIN_NAME);
+        super();
     }
 
     override onStarting(injector: Injector): void {

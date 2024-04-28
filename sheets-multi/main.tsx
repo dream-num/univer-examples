@@ -1,7 +1,7 @@
 import "react-mosaic-component/react-mosaic-component.css";
 import "./index.css";
 
-import { LocaleType, LogLevel, Tools, Univer } from "@univerjs/core";
+import { LocaleType, LogLevel, Tools, Univer, UniverInstanceType } from "@univerjs/core";
 import { defaultTheme } from "@univerjs/design";
 import { UniverDocsPlugin } from "@univerjs/docs";
 import { UniverFormulaEnginePlugin } from "@univerjs/engine-formula";
@@ -50,7 +50,7 @@ function factory(id: string) {
     univer.registerPlugin(UniverSheetsZenEditorPlugin);
 
     // create univer sheet instance
-    univer.createUniverSheet(Tools.deepClone(ALL_FEATURES_WORKBOOK_DATA));
+    univer.createUnit(UniverInstanceType.UNIVER_SHEET, Tools.deepClone(ALL_FEATURES_WORKBOOK_DATA));
 
     univers.push(univer);
   };
