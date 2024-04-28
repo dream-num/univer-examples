@@ -1,7 +1,12 @@
 import { resolve } from 'path'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { execSync } from 'node:child_process';
+
 import { univerPlugin } from '@univerjs/vite-plugin'
+// Get git commit hash and ref name
+const gitCommitHash = execSync('git rev-parse --short HEAD').toString().trim();
+const gitRefName = execSync('git symbolic-ref -q --short HEAD || git describe --tags --exact-match').toString().trim();
 
 export default defineConfig({
     base: './',
@@ -28,4 +33,9 @@ export default defineConfig({
           },
         },
       },
+      define:{
+        'process.env.GIT_COMMIT_HASH': `"${gitCommitHash}"`,
+        'process.env.GIT_REF_NAME': `"${gitRefName}"`,
+        'process.env.BUILD_TIME': `"${new Date().toISOString()}"`,
+      }
   })
