@@ -15,7 +15,7 @@
  */
 import "./style.css";
 
-import { LocaleType, LogLevel, Univer } from '@univerjs/core';
+import { LocaleType, LogLevel, Univer, UniverInstanceType } from '@univerjs/core';
 import { defaultTheme } from '@univerjs/design';
 import { UniverRenderEnginePlugin } from '@univerjs/engine-render';
 import { UniverSlidesPlugin } from '@univerjs/slides';
@@ -43,7 +43,7 @@ univer.registerPlugin(UniverUIPlugin, {
 univer.registerPlugin(UniverSlidesPlugin);
 univer.registerPlugin(UniverSlidesUIPlugin);
 
-univer.createUniverSlide(DEFAULT_SLIDE_DATA);
+univer.createUnit(UniverInstanceType.UNIVER_SLIDE, DEFAULT_SLIDE_DATA);
 
 // use for console test
 declare global {

@@ -17,6 +17,9 @@ import { Mosaic, MosaicWindow } from "react-mosaic-component";
 import { UniverDocsUIPlugin } from "@univerjs/docs-ui";
 import { locales } from "./locales";
 import { ALL_FEATURES_WORKBOOK_DATA } from "../data/sheets/demo/features";
+import { UniverDataValidationPlugin } from "@univerjs/data-validation";
+import { UniverSheetsDataValidationPlugin } from "@univerjs/sheets-data-validation";
+import { UniverSheetsConditionalFormattingUIPlugin } from "@univerjs/sheets-conditional-formatting-ui";
 
 const univers: Univer[] = [];
 
@@ -48,6 +51,13 @@ function factory(id: string) {
     univer.registerPlugin(UniverFormulaEnginePlugin);
     univer.registerPlugin(UniverSheetsFormulaPlugin);
     univer.registerPlugin(UniverSheetsZenEditorPlugin);
+
+    // data validation
+    univer.registerPlugin(UniverDataValidationPlugin)
+    univer.registerPlugin(UniverSheetsDataValidationPlugin)
+
+    // sheet condition formatting
+    univer.registerPlugin(UniverSheetsConditionalFormattingUIPlugin)
 
     // create univer sheet instance
     univer.createUnit(UniverInstanceType.UNIVER_SHEET, Tools.deepClone(ALL_FEATURES_WORKBOOK_DATA));

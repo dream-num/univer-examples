@@ -16,7 +16,7 @@
 
 import "./style.css";
 
-import { LocaleType, Univer } from '@univerjs/core';
+import { LocaleType, Univer, UniverInstanceType } from '@univerjs/core';
 import { defaultTheme } from '@univerjs/design';
 import { UniverDocsPlugin } from '@univerjs/docs';
 import { UniverDocsUIPlugin } from '@univerjs/docs-ui';
@@ -42,14 +42,11 @@ univer.registerPlugin(DebuggerPlugin);
 univer.registerPlugin(UniverUIPlugin, {
     container: 'app',
     header: true,
-    toolbar: true,
 });
-univer.registerPlugin(UniverDocsPlugin, {
-    standalone: true,
-});
+univer.registerPlugin(UniverDocsPlugin);
 univer.registerPlugin(UniverDocsUIPlugin);
 
-univer.createUniverDoc(DOCS_BIG_DATA);
+univer.createUnit(UniverInstanceType.UNIVER_DOC, DOCS_BIG_DATA)
 
 // add read only tip
 setTimeout(() => {
