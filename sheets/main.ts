@@ -15,6 +15,8 @@ import { UniverUIPlugin } from "@univerjs/ui";
 import { UniverSheetsZenEditorPlugin } from '@univerjs/sheets-zen-editor';
 import { UniverFindReplacePlugin } from '@univerjs/find-replace';
 import { UniverSheetsFindReplacePlugin } from '@univerjs/sheets-find-replace';
+import { UniverSheetsFilterPlugin } from '@univerjs/sheets-filter';
+import { UniverSheetsFilterUIPlugin } from '@univerjs/sheets-filter-ui';
 import { UniverDataValidationPlugin } from '@univerjs/data-validation';
 import { UniverSheetsDataValidationPlugin } from '@univerjs/sheets-data-validation';
 import { UniverSheetsConditionalFormattingUIPlugin } from '@univerjs/sheets-conditional-formatting-ui';
@@ -66,11 +68,15 @@ univer.registerPlugin(UniverSheetsDataValidationPlugin);
 univer.registerPlugin(UniverSheetsFindReplacePlugin);
 
 // sheet condition formatting
+univer.registerPlugin(UniverSheetsConditionalFormattingUIPlugin);
+
+// filter
+univer.registerPlugin(UniverSheetsFilterPlugin);
+univer.registerPlugin(UniverSheetsFilterUIPlugin);
 
 // create univer sheet instance
 univer.createUnit(UniverInstanceType.UNIVER_SHEET, ALL_FEATURES_WORKBOOK_DATA);
 
-univer.registerPlugin(UniverSheetsConditionalFormattingUIPlugin);
 // setTimeout(() => {
 //   import('./lazy').then((lazy) => {
 //       const plugins = lazy.default();
