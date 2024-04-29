@@ -20,6 +20,8 @@ import { defaultTheme } from '@univerjs/design';
 import { UniverRenderEnginePlugin } from '@univerjs/engine-render';
 import { UniverSlidesPlugin } from '@univerjs/slides';
 import { UniverSlidesUIPlugin } from '@univerjs/slides-ui';
+import { UniverFormulaEnginePlugin } from '@univerjs/engine-formula';
+
 import { UniverUIPlugin } from '@univerjs/ui';
 
 import { DEFAULT_SLIDE_DATA } from '../data';
@@ -35,6 +37,7 @@ const univer = new Univer({
 
 // base-render
 univer.registerPlugin(UniverRenderEnginePlugin);
+univer.registerPlugin(UniverFormulaEnginePlugin);
 univer.registerPlugin(UniverUIPlugin, {
     container: 'app-slides',
     header: true,
